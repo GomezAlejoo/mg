@@ -1,0 +1,46 @@
+.textoPrincipal {
+  color: map-get($colores, color-blanco);
+  text-align: center;
+  margin-top: 5px;
+
+}
+
+.imagenTamaño {
+  height: 500px;
+  width: 290px;
+}
+
+section {
+  .servicios {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+
+    .contenedor-cortes {
+      position: relative;
+
+      .textoCortes {
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: map-get($colores, color-blanco);
+        text-shadow: 4px 4px 2px rgba(157, 150, 150, 0.663);
+
+      }
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .servicios {
+   @include centrar-columna-flexbox;
+  }
+
+  .textoPrincipal {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

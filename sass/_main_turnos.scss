@@ -1,0 +1,58 @@
+.main_formulario {
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    .main_formulario_contenedor {
+        .textoFormulario_turnos {
+            color: map-get($colores, color-blanco);
+            text-align: center;
+        }
+    }
+}
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: map-get($colores, color-blanco);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        resize: vertical;
+        height: 100px;
+    }
+
+    input[type="submit"] {
+        background-color: #d2ac7f;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #ca985c;
+    }
+
+
+}

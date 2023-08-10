@@ -1,0 +1,64 @@
+section {
+    .contenedor__presentacion {
+        display: flex;
+        background-color: map-get($colores, color-gris-medio);
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+
+
+        .texto_nosotros {
+            color: map-get($colores, color-blanco);
+            max-width: 1000px;
+            text-align: center;
+            justify-content: center;
+
+        }
+    }
+}
+
+section {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+
+
+        .barber {
+            color: map-get($colores, color-blanco);
+            text-align: center;
+            margin: 10px 30px;
+            background-color: map-get($colores, color-gris-oscuro);
+            border-radius: 5%;
+            padding-left: 10px;
+            padding-right: 10px;
+
+
+            img {
+                width: 200px;
+                height: auto;
+                border-radius: 50%;
+                margin-top: 50px;
+
+
+            }
+
+
+        }
+    }
+}
+
+@media (max-width:764px) {
+    .container {
+        @include centrar-columna-flexbox;
+
+    }
+
+}
+
+@media (max-width:764px) {
+    .texto_nosotros {
+        margin: 10px 20px;
+    }
+}

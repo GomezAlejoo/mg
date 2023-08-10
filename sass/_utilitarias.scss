@@ -1,0 +1,129 @@
+body {
+  background-color: map-get($colores, color-fondo);
+
+  img {
+    object-fit: cover;
+  }
+
+  * h1 {
+    font-family: $fuenteprimaria;
+    font-size: 60px;
+  }
+
+  * h2 {
+    font-family: $fuentresecundario ;
+    font-size: 40px;
+  }
+
+  * p {
+    font-family: $fuenteparrafos;
+    font-size: 20px;
+  }
+
+  * h3 {
+    font-family: $fuentetercera;
+  }
+
+
+}
+
+.header__index {
+  background-image: url(../assets/fondo_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 790px;
+  position: relative;
+  filter: grayscale(80%);
+
+}
+
+
+.header__nosotros {
+  @extend .header__index;
+  background-image: url(../assets/fondo_header_nosotros.jpg);
+  filter: grayscale(50%);
+}
+
+.header__turnos {
+  @extend .header__nosotros;
+  background-image: url(../assets/fondo_header_turnos.jpg);
+
+}
+
+.header__ubicacion {
+  @extend .header__nosotros;
+  background-image: url(../assets/fondo_header_ubicacion.jpg);
+}
+
+.header__galeria {
+  @extend .header__nosotros;
+  background-image: url(../assets/fondo_header_galeria.jpg);
+
+}
+
+.header__error404 {
+  @extend .header__nosotros;
+  background-image: url(../assets/fond_header_error404.jpg);
+}
+
+
+.texto__header {
+  color: map-get($colores, color-blanco);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.imagenCorte {
+  margin: 60px;
+  transition: transform 0.3s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+
+
+.textoPrincipal {
+  color: map-get($colores, color-blanco);
+  text-align: center;
+  margin-top: 5px;
+}
+
+.imagenTamaño {
+  height: 500px;
+  width: 350px;
+}
+
+.imagenCarrusel {
+  height: 570px;
+}
+
+.texto_barberia {
+  max-width: 900px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.texto_seminarios {
+  text-shadow: 4px 4px 2px rgba(157, 150, 150, 0.663);
+}
+
+.boton{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d2ac7f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+    &:hover{
+      color:map-get($colores, color-gris-claro ) ;
+      background-color: #ca985c;
+    }
+}

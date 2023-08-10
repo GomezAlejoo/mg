@@ -1,0 +1,27 @@
+$fuenteprimaria: 'Teko', sans-serif;
+
+$fuentresecundario: 'Fira Sans Condensed', sans-serif;
+
+$fuentetercera: 'Fira Sans Condensed', sans-serif;
+
+$fuenteparrafos: 'Fira Sans Condensed', sans-serif;
+
+
+$colores: (
+    color-fondo:#1b1b1b,
+    color-blanco:#ffffff,
+    color-negro:#232323,
+    color-gris-claro:rgba(255, 255, 255, 0.7),
+    color-gris-medio:#333332,
+    color-gris-oscuro:#242423,
+
+
+
+);
+
+@mixin centrar-columna-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
